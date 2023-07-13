@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Your favourite music is here!</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <audio id = "myAudio" src=""></audio>
+    <nav>
+        <ul>
+            <li class="brand"><img src="pngegg.png" alt="Spotify"></l1>
+                <li class="spt">Spotify</li>
+                <li class="spt1">Home</li>
+                <li class="spt1">About</li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="songlist">
+            <h1>Justin Beiber's Best Hits</h1>
+            <div class="songItemContainer">
+                <div class="songItem">
+                    <img src="Let Me Love You….jpeg" alt="1">
+                    <span class="songname">Let me love you</span>
+                    <span class="songlistplay"><span>03:25<i id="0" class="fa-solid songItemPlay fa-circle-play fa-2l" ></i></span><span>
+                </div>
+                <div class="songItem">
+                    <img src="Intentions.jpg" alt="1">
+                    <span class="songname">Intentions</span>
+                    <span class="songlistplay"><span>03:32<i id = "1" class="fa-solid songItemPlay fa-circle-play fa-2l"></i></span><span>
+                </div>
+                <div class="songItem">
+                    <img src="stay.jpg" alt="1">
+                    <span class="songname">STAY 2021</span>
+                    <span class="songlistplay"><span>02:37<i id="2" class="fa-solid songItemPlay fa-circle-play fa-2l"></i></span><span>
+                </div>
+                <div class="songItem">
+                    <img src="baby.jpg" alt="1">
+                    <span class="songname">Baby</span>
+                    <span class="songlistplay"><span>03:34<i id="3" class="fa-solid songItemPlay fa-circle-play fa-2l"></i></span><span>
+                </div>
+                <div class="songItem">
+                    <img src="yummy.jpg" alt="1">
+                    <span class="songname">Yummy</span>
+                    <span class="songlistplay"><span>03:30<i id="4" class="fa-solid songItemPlay fa-circle-play fa-2l"></i></span><span>
+                </div>
+                <div class="songItem">
+                    <img src="ghost.jpg" alt="1">
+                    <span class="songname">Ghost</span>
+                    <span class="songlistplay"><span>02:33<i id="5" class="fa-solid songItemPlay fa-circle-play fa-2l"></i></span><span>
+                </div>
+            </div>
+        </div>
+        <div class="songbanner" >
+            <img src="let me love you.jpg"> 
+            <!-- <img src="GIF from GIFER.gif" alt="1"> -->
+        </div>
+    </div>
+    <div class="bottom">
+        <input type="range" name="range" id="myProgressBar" value="0" min="0" max="100">
+        <div class="icons">
+            <i class="fa-solid fa-backward-step fa-2xl" id="previous"></i>
+            <i class="fa-solid fa-circle-play fa-2xl" id="masterPlay"></i>
+            <i class="fa-solid fa-forward-step fa-2xl" id="next"></i>
+            <!--fontawesome icons-->
+        </div>
+        <div class="songInfo">
+            <img src="GIF from GIFER.gif" id="gif" width="56px" alt="12"> 
+        </div>
+        <div class="songname-bottom" id="songname-bottom">Let me love you</div>
+        <div class="timestamp">0<span id="minutetimestamp">0</span>:<span id="secondtimestamp">00</span></div>
+    </div>
+    <script src="https://kit.fontawesome.com/8fa82b163b.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>

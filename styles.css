@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&family=Varela+Round&display=swap');
+body{
+    background-color: antiquewhite;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    font-family: 'Ubuntu' , sans-serif;
+}
+nav ul{
+    display:flex;
+    list-style-type: none;
+    height:65px;
+    background-color: black;
+    color:white;
+}
+nav ul li{
+    padding: 0px 8px
+}
+.spt{
+    align-items: centre;
+    font-weight: bolder;
+    font-size: 1.3rem;
+    padding:16.5px 0px
+}
+.spt1{
+    align-items: centre;
+    padding:18.5px 18px
+}
+.brand img{
+    width:40px;
+    padding:11px 8px;
+}
+.brand {
+    display:flex;
+    align-items: centre;
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+.container{
+    height: 60vh;
+    background-color: black;
+    color: white;
+    width: 60%;
+    display:flex;
+    margin:23px auto;
+    border-radius: 10px;
+    padding:30px;
+    background-image: url('background.jpeg');
+    
+}
+
+
+.bottom{
+    /* position:; */
+    height:107px;
+    background-color: black;
+    display: flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items: center;
+    color:white;
+}
+#myProgressBar{
+    width: 60vw;
+    cursor: pointer;
+}
+.icons{
+    margin-top:14px;
+}
+.icons i{
+    cursor:pointer;
+}
+.songlist{
+    margin-left: 40px;
+}
+.songItem{
+    height:30px;
+    width:95%;
+    display:flex;
+    margin-top: 30px;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+    color: black;
+    border-radius: 20px;
+    cursor:pointer;
+}
+
+
+.songItem img{
+    width:30px;
+    border-radius: 34px;
+}
+.songItem i{
+    cursor: pointer;
+}
+.songItemContainer{
+    margin:40px 0;
+}
+.songInfo{
+    position:absolute;
+    left:19.5vw;
+    margin-top: 48px;
+    font-family: 'Ubuntu' , sans-serif
+}
+.songname-bottom{
+    position: absolute;
+    left:20vw;
+}
+
+.songInfo img{
+    opacity: 0;
+    transition: opacity 0.3s ease-in;
+}
+.timestamp{
+    position: absolute;
+    right:43vh;
+}
+.songbanner img{
+    /* position:absolute; */
+    /* display: flex;
+    justify-content: center; */
+    width:65%;
+    margin-top: 72px;
+    margin-left: 120px;
+    opacity:0.5;
+    /* transition:opacity 1s ease-in; */
+}
+
+
