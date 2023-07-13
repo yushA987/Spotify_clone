@@ -27,13 +27,14 @@ let songs = [
 masterPLay.addEventListener('click',()=>
 {
     if(audioElement.paused || audioElement.currentTime <= 0){
-
+        makeAllPauseExceptSongIndex();
         audioElement.play();
         masterPLay.classList.remove("fa-circle-play");
         masterPLay.classList.add("fa-circle-pause");
         gif.style.opacity = 1;
     }
     else{
+        makeAllPlays();
         audioElement.pause();
         masterPLay.classList.remove("fa-circle-pause");
         masterPLay.classList.add("fa-circle-play");
@@ -67,6 +68,15 @@ const makeAllPlays = ()=>{
         element.classList.remove('fa-circle-pause');
         element.classList.add('fa-circle-play');
         // }
+    })
+}
+const makeAllPauseExceptSongIndex = ()=>{
+    Array.from(document.getElementsByClassName('songItemPlay')).forEach((element)=>{
+        // console.log(element);
+        if(songIndex == element.id){
+        element.classList.remove('fa-circle-play');
+        element.classList.add('fa-circle-pause');
+        }
     })
 }
 Array.from(document.getElementsByClassName('songItemPlay')).forEach((element)=>{
