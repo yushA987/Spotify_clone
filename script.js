@@ -127,10 +127,13 @@ Array.from(document.getElementsByClassName('songItemPlay')).forEach((element)=>{
 document.getElementById('previous').addEventListener('click',()=>{
     makeAllPlays();
     if(songIndex == 0)
-    songIndex=5;
+    songIndex = 5;
     else
     songIndex-=1;
 
+    let num = songIndex;
+    document.getElementById(num.toString()).classList.add('fa-circle-pause');
+    document.getElementById(num.toString()).classList.remove('fa-circle-play');
     audioElement.currentTime = 0;
     audioElement.src = songs[songIndex].filePath;
     masterPLay.classList.remove("fa-circle-play");
@@ -139,18 +142,18 @@ document.getElementById('previous').addEventListener('click',()=>{
     gif.style.opacity = 1;
     document.getElementById("songname-bottom").innerText = songs[songIndex].songName;
     songbanner.src = songs[songIndex].coverPath;
-    //  sngbanner.style.opacity = 0.5;
 
 })
 
 document.getElementById('next').addEventListener('click',()=>{
     makeAllPlays();
     if(songIndex == 5)
-    songIndex=0;
+    songIndex = 0;
     else
     songIndex+=1;
     let num = songIndex;
-    // console.log(num.toString());
+    console.log(songIndex);
+    console.log()
     document.getElementById(num.toString()).classList.remove('fa-circle-play');
     document.getElementById(num.toString()).classList.add('fa-circle-pause');
     audioElement.currentTime = 0;
